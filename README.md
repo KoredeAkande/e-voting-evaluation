@@ -53,6 +53,13 @@ Table 3 presents the proportion of e-voters and traditional voters that gave pos
 ## Conclusion and Recommended additional analysis
 The balance achieved (described above) through our genetic matching is superior on most variables when compared to the original paper’s matching. In addition we do not discard any treated units, further conferring confidence in our results. From our causal effects (see Table 3 extension), we see that e-voting has a positive impact on the voting experience when compared to traditional voting. We see a positive difference in proportion for all but one question related to voting experience, indicating that for the most part, e-voters have more positive perceptions and evaluations of the voting experience. This suggests that e-voting does improve the legitimacy of elections and the general voting experience. To have more confidence in the results we obtain, our analysis will benefit from a sensitivity analysis to determine if the presence of an unmeasured covariate could significantly influence the conclusion drawn. 
 
+# References
+Alvarez M., Levin, I., Pomares, J., Leiras, M. (2013, June).  Political Science Research and Methods 1(1): 117-37. Retrieved from: https://www-cambridge-org.ccl.idm.oclc.org/core/journals/political-science-research-and-methods/article/voting-made-safe-and-easy-the-impact-of-evoting-on-citizen-perceptions/A96562BA348433894BED1F2BA8BC3761
+
+
+King, G., & Nielsen, R. (2018). Why Propensity Scores Should Not Be Used for Matching. Retrieved from: https://gking.harvard.edu/files/gking/files/psnot.pdf.
+
+
 
 
 
