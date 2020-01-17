@@ -1,0 +1,47 @@
+
+model{
+  for(i in 1:n) {
+    y[i] ~ dbern(p.bound[i])
+    p.bound[i]  <-  max(0, min(1, p[i]))
+
+    logit(p[i])  <-  alpha[poll.place.ID[i]]
+      + beta[poll.place.ID[i], 1] * age.group[i]
+      + beta[poll.place.ID[i], 2] * age.group.sq[i]
+      + beta[poll.place.ID[i], 3] * age.group[i] * educ[i]
+      + beta[poll.place.ID[i], 4] * educ[i] 
+      + beta[poll.place.ID[i], 5] * tech[i]
+      + beta[poll.place.ID[i], 6] * white.collar[i]
+      + beta[poll.place.ID[i], 7] * not.full.time[i]
+      + beta[poll.place.ID[i], 8] * male[i]
+      + beta[poll.place.ID[i], 9] * pol.info[i]
+									
+  }
+
+  for (k in 1:n.pollplace) { 
+    alpha[k] ~ dnorm(alpha.mean[k], prec.alpha)	
+    alpha.adj[k] <- alpha[k] - mean(alpha[])
+    alpha.mean[k]  <-  gamma[1]
+      + gamma[2] * EV[k]
+
+    for (j in 1:nvar.lev1) { 
+      beta[k, j] ~ dnorm(beta.mean[j], prec.beta[j])
+      beta.adj[k, j] <- beta[k, j] - mean(beta[, j])
+
+  }}
+
+
+  for (j in 1:nvar.lev1) { 
+    beta.mean[j] ~ dnorm(0, 0.01) 
+    sigma.beta[j] ~ dunif(0, 100)
+    prec.beta[j] <-  pow(sigma.beta[j], -2)
+  }
+
+  for (j in 1:nvar.lev2) {   
+    gamma[j] ~ dnorm(0, 0.01) 
+  }
+
+  sigma.alpha ~ dunif(0, 100)
+  prec.alpha <-  pow(sigma.alpha, -2)
+
+}
+

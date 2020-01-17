@@ -1,0 +1,9 @@
+datamatch.RData (application/x-rlang-transport) 10920 bytes.
+datamatched.RData (application/x-rlang-transport) 18909 bytes.
+m.out.Rdata (application/x-rlang-transport) 508015 bytes.
+model.bug (text/plain; charset=US-ASCII) 1213 bytes.
+readme.txt (text/plain; charset=US-ASCII) 1280 bytes.
+salta_data.RData (application/x-rlang-transport) 15695 bytes.
+script1_recoding.R (text/plain; charset=US-ASCII) 6571 bytes.
+script2_analysis.R (text/plain; charset=US-ASCII) 7937 bytes.
+script3_multilev.R (text/plain; charset=US-ASCII) 7731 bytes.
