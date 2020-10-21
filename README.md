@@ -27,7 +27,7 @@ We present plots to visualize the balance on covariates obtained through genetic
 
 ![Figure 2](genetic_matching_balance_on_covariates.png)
 
-From the figure above, we see a significant improve in the balance on educ, white.col, and tech. In addition, balance did not worsen on any of the other covariates.
+From the figure above, we see a significant improvement in the balance on educ, white.col, and tech. In addition, balance did not worsen on any of the other covariates.
 
 No treated units were dropped in the process of attaining high balance on all the covariates. However, 201 control units were dropped.
 
